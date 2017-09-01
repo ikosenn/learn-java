@@ -8,6 +8,10 @@ public class ControlFlow {
 			System.out.println(value);
 			value = value + 1;
 		}
+		
+		for (int i=0; i<90; i++) {
+			System.out.println(i);
+		}
 	}
 
 }
