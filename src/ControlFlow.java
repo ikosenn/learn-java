@@ -1,5 +1,8 @@
+import java.util.Scanner;
 
 public class ControlFlow {
+
+	private static Scanner input;
 
 	public static void main(String[] args) {
 		int value = 0;
@@ -13,7 +16,9 @@ public class ControlFlow {
 			System.out.println(i);
 		}
 		
-		int checker = -11;
+		input = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int checker = input.nextInt();
 		if (checker > 10) {
 			System.out.println("checker greater than ten");
 		} else if (checker > 0 && checker <= 10)  {
