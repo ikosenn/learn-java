@@ -25,7 +25,6 @@ public class Application {
 		System.out.println(myByte);
 		
 		// non primitive types.
-		
 		String myString = "Hello";
 		String blank = " ";
 		String name = "Bob";
