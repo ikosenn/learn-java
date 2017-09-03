@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class ControlFlow {
 
 	private static Scanner input;
+	private static Scanner scanner;
 
 	public static void main(String[] args) {
 		int value = 0;
@@ -26,6 +27,20 @@ public class ControlFlow {
 		} else {
 			System.out.println("checker is less than zero");
 		}
+		
+		// do while statements
+		int number;
+		do {
+			scanner = new Scanner(System.in);
+			System.out.println("Enter a number:");
+			number = scanner.nextInt();
+			
+		} while (number != 5);
+		
+		System.out.println("Done. Five was entered..");
+		
+		
+		// switch statements
 	}
 
 }
