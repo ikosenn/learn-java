@@ -4,6 +4,7 @@ public class ControlFlow {
 
 	private static Scanner input;
 	private static Scanner scanner;
+	private static Scanner newScanner;
 
 	public static void main(String[] args) {
 		int value = 0;
@@ -39,8 +40,22 @@ public class ControlFlow {
 		
 		System.out.println("Done. Five was entered..");
 		
-		
 		// switch statements
+		newScanner = new Scanner(System.in);
+		System.out.println("Please enter a command");
+		String text = newScanner.nextLine();
+		
+		switch(text) {
+		case "start":
+			System.out.println("Machine started");
+			break;
+		case "stop":
+			System.out.println("Machine stopped");
+			break;
+		default:
+			System.out.println("Command not recognized");
+			break;
+		}
 	}
 
 }
