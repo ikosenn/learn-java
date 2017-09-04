@@ -115,5 +115,14 @@ public class JavaClass {
 		System.out.println(Thing.LUCKY_NUMBER);
 		thing_1.showName();
 		Thing.showInfo();
+		
+		Laptop lappy1 = new Laptop();
+		lappy1.start();
+		lappy1.stop();
+		
+		Mac mac1 = new Mac();
+		mac1.start();
+		mac1.killProc();
+		mac1.stop();
 	}
 }
