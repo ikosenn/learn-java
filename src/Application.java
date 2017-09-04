@@ -49,8 +49,13 @@ public class Application {
 			System.out.println(fruit);
 		}
 		
-		// array list
-		
+		// multi-d lists
+		int[][] matrice = {
+			{3, 5, 6},
+			{6, 3, 4},
+			{9, 5, 6, 7}
+		};
+		System.out.println("Row 2: col 3: = " + matrice[2][3]);
 	}
 
 }
