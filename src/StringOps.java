@@ -1,4 +1,8 @@
-
+class Frog {
+	public String toString() {
+		return "Noma";
+	}
+}
 public class StringOps {
 	public static void main(String[] args) {
 		// string builder
@@ -16,6 +20,10 @@ public class StringOps {
 		 System.out.println(sbf.toString());
 		 
 		 // formatting
-		 System.out.printf("%1.5f", 5558.0);
+		 System.out.printf("%1.5f\n", 5558.0);
+		 
+		 Frog frog1 = new Frog();
+		 
+		 System.out.println(frog1);
 	}
 }
