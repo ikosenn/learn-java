@@ -43,6 +43,14 @@ public class Application {
 		for(int i = 0; i < arrInt.length; i++) {
 			System.out.println(arrInt[i]);
 		}
+		
+		String[] fruits = {"apple", "banana", "mango"};
+		for(String fruit: fruits) {
+			System.out.println(fruit);
+		}
+		
+		// array list
+		
 	}
 
 }
