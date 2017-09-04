@@ -33,6 +33,16 @@ public class Application {
 		System.out.println(greeting);
 		System.out.println("Hello" + " " + "Bob");
 		System.out.println("My int is: " + myNumber);
+		
+		//arrays
+		int[] arrInt = {8,4,5};
+//		arrInt = new int[3];
+//		arrInt[0] = 80;
+//		arrInt[1] = 83;
+//		arrInt[2] = 30;
+		for(int i = 0; i < arrInt.length; i++) {
+			System.out.println(arrInt[i]);
+		}
 	}
 
 }
