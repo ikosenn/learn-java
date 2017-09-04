@@ -1,3 +1,17 @@
+class Thing {
+	public String name;
+	public static String description;
+	public final static int LUCKY_NUMBER = 66;
+	
+	public void showName() {
+		System.out.println(this.name + " " + description);
+	}
+	
+	public static void showInfo() {
+		System.out.println(description);
+	}
+}
+
 class Machine {
 	private String name;
 	private int age;
@@ -89,5 +103,17 @@ public class JavaClass {
 		Machine m_two = new Machine("Matope", 90);
 		m_two.getNameAge();
 		
+		
+		Thing thing_1 = new Thing();
+		Thing thing_2 = new Thing();
+		thing_1.name = "Bob";
+		thing_2.name = "Sue";
+		Thing.description = "I am thing;";
+		System.out.println(thing_1.name);
+		System.out.println(thing_2.name);
+		System.out.println(Thing.description);
+		System.out.println(Thing.LUCKY_NUMBER);
+		thing_1.showName();
+		Thing.showInfo();
 	}
 }
