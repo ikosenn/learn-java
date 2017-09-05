@@ -63,6 +63,9 @@ public class Application {
 		long lonVal = 7999;
 		intVal = (int)lonVal;
 		System.out.println(intVal);
+		
+		byte byteVaue =  (byte)900;
+		System.out.println(byteVaue);
 	}
 
 }

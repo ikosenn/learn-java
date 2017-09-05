@@ -13,5 +13,17 @@ public class App {
 		Laptop lappy = mac1;
 		lappy.start();
 		
+		// downcasting and upcasting 
+		Laptop lap2 = new Laptop();
+		Mac mac2 = new Mac();
+		
+		// upcasting
+		Laptop lap3 = mac2;
+		lap3.start();
+		
+		// downcasting
+		Laptop lap4 = new Mac();
+		Mac mac4 = (Mac)lap4;
+		mac4.killProc();
 	}
 }
