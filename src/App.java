@@ -7,5 +7,11 @@ public class App {
 		Fish fish = new Fish();
 		SeaWeed sea = new SeaWeed();
 		Algae alg = new Algae();
+		
+		// polymorphism
+		Mac mac1 = new Mac();
+		Laptop lappy = mac1;
+		lappy.start();
+		
 	}
 }
