@@ -2,6 +2,10 @@ import ocean.Fish;
 import ocean.SeaWeed;
 import ocean.plants.Algae;
 
+interface Plant {
+	public void grow();
+}
+
 public class App {
 	public static void main(String[] args) {
 		Fish fish = new Fish();
@@ -25,5 +29,21 @@ public class App {
 		Laptop lap4 = new Mac();
 		Mac mac4 = (Mac)lap4;
 		mac4.killProc();
+		
+		Mac mac5 = new Mac() {
+			@Override public void killProc() {
+				System.out.println("Kufa");
+			}
+		};
+		
+		mac5.killProc();
+		
+		Plant plant1 = new Plant() {
+			@Override
+			public void grow() {
+				System.out.println("growing");
+			}
+		};
+		plant1.grow();
 	}
 }
