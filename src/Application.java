@@ -56,6 +56,13 @@ public class Application {
 			{9, 5, 6, 7}
 		};
 		System.out.println("Row 2: col 3: = " + matrice[2][3]);
+		
+		// cast 
+		int intVal = 5;
+		System.out.println(intVal);
+		long lonVal = 7999;
+		intVal = (int)lonVal;
+		System.out.println(intVal);
 	}
 
 }
